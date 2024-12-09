@@ -40,9 +40,9 @@ signUpbtn.addEventListener('click', function () {
     var signUpPassValue = signUpPass.value
 
     function resetForm() {
-        signUpNameValue = ""
-        signUpEmailValue = ""
-        signUpPassValue = ""
+        signUpName.value = ""
+        signUpEmail.value= ""
+        signUpPass.value = ""
     }
 
     var User = {
@@ -96,6 +96,7 @@ signUpbtn.addEventListener('click', function () {
                 succesMsg.classList.remove('d-none')
                 allrreg.classList.add('d-none')
                 emptyInput.classList.add('d-none')
+                resetForm()
             }
         }
     }
