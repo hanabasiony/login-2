@@ -3,8 +3,6 @@ var signUpEmail = document.getElementById('sign-up-email')
 var signUpPass = document.getElementById('sign-up-pass')
 var signUpbtn = document.querySelector('.signup-buttom')
 
-// validation
-
 var allrreg = document.querySelector('.already-msg')
 var emptyInput = document.querySelector('.erorr-msg')
 var succesMsg = document.querySelector('.succ-msg')
@@ -96,6 +94,7 @@ signUpbtn.addEventListener('click', function () {
                 succesMsg.classList.remove('d-none')
                 allrreg.classList.add('d-none')
                 emptyInput.classList.add('d-none')
+                window.location.href = '../index.html'
                 resetForm()
             }
         }

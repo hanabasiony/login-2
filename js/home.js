@@ -1,7 +1,5 @@
 var userNameHtml = document.getElementById('user-name')
 
-// validation
-
 var allrreg = document.querySelector('.already-msg')
 var emptyInput = document.querySelector('.erorr-msg')
 var succesMsg = document.querySelector('.succ-msg')

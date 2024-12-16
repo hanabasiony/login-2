@@ -27,16 +27,16 @@ signInbtn.addEventListener('keyup' ,dnoneAll)
 
 
 signInbtn.addEventListener('click', function () {
-    // validation
+
     if (signInEmail.value === '' || signInEmail.value === '') {
         var emptyInput = document.querySelector('.erorr-msg')
         emptyInput.classList.remove('d-none')
     } else {
-        // to get the data to be checked and to be stored in local storage
+
         var signInEmailValue = signInEmail.value
         var signInPasswordValue = signInPassword.value
         var isReg = false
-        // to check user data
+
         for (i = 0; i < allUsers.length; i++) {
             if (signInEmailValue === allUsers[i].email && signInPasswordValue === allUsers[i].pass) {
                 console.log("succes")
